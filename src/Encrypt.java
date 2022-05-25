@@ -1,11 +1,10 @@
 public class Encrypt {
     String message;
-    String[][] alphabet = {{"A", "1"}, {"B", "2"}, {"C", "3"}, {"D", "4"},
-            {"E", "5"}, {"F", "6"},{"G", "7"}, {"H", "8"}, {"I", "9"},
-            {"J", "10"}, {"K", "11"}, {"L", "12"}, {"M", "13"}, {"N", "14"},
-            {"O", "15"}, {"P", "16"}, {"Q", "17"}, {"R", "18"}, {"S", "19"},
-            {"T", "20"}, {"U", "21"}, {"V", "22"}, {"W", "23"}, {"X", "24"},
-            {"Y5", "2"}, {"Z", "26"}}; //reference of letter to number
+    String[] alphabet = {"A", "B", "C", "D",
+            "E", "F","G", "H", "I",
+            "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S",
+            "T", "U", "V", "W", "X",
+            "Y", "Z"}; //alphabet; if letter # needed use index + 1
 
 
     public Encrypt(String passedMessage){
@@ -18,6 +17,12 @@ public class Encrypt {
 
     public int[] changeToNum(String message){
         int[] intArray = new int[message.length()];
+
+        for (int i = 0; i < message.length(); i++) {
+            for (int j = 0; j < alphabet.length; j++) {
+
+            }
+        }
         return intArray;
     }
 }
